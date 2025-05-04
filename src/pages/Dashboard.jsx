@@ -91,17 +91,10 @@ const Dashboard = () => {
                   justifyContent: "center",
                   alignItems: "center",
                   transition: "0.3s",
-                  background: (theme) =>
-                    `linear-gradient(135deg, ${theme.palette.primary.light} 0%, ${theme.palette.primary.main} 100%)`,
-                  color: (theme) => theme.palette.primary.contrastText,
-                  "&:hover": {
-                    boxShadow: 6,
-                    transform: "scale(1.05)",
-                  },
                 }}
               >
                 <Icon sx={{ fontSize: 40, mb: 1 }} />
-                <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+                <Typography variant="h4" sx={{ fontWeight: "medium" }}>
                   {stat.value}
                 </Typography>
                 <Typography variant="subtitle1" sx={{ opacity: 0.8 }}>
